@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Simon Limon</title>
+  <img src="image.jpg" alt>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #game-container {
+      width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #sequence-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+   .color-button {
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      margin: 10px;
+      cursor: pointer;
+    }
+   .color-button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <h1>Simon Limon</h1>
+    <div id="sequence-container">
+      <button class="color-button" id="red-button" style="background-color: #FF0000;"></button>
+      <button class="color-button" id="blue-button" style="background-color: #0000FF;"></button>
+      <button class="color-button" id="green-button" style="background-color: #00FF00;"></button>
+      <button class="color-button" id="yellow-button" style="background-color: #FFFF00;"></button>
+    </div>
+   
+  </div>
+
+  <script src="Simon-Limon.js"></script>
+</body>
+
+
+<div class="tile" data-tile="red" onclick="handleClick('red')"></div>
+<div class="tile" data-tile="green" onclick="handleClick('green')"></div>
+<div class="tile" data-tile="blue" onclick="handleClick('blue')"></div>
+<div class="tile" data-tile="yellow" onclick="handleClick('yellow')"></div>
+
+
+
+
+
+<div id="game-container">
+ 
+  <div id="sequence-container">
+   
+  </div>
+  <p id="sequence-display"></p>
+  <button id="start-button">Restart Game</button>
+  <div id="level"></div> 
+  <h4>Instructions</h4>
+  <h6>Follow the prompts to the best of your ability. The prompts will get longer as the round progresses. There are 5 levels in total. Press the restart button to restart at any time.</h6>
+</div>
+</html>
